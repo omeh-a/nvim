@@ -972,7 +972,7 @@ require('lazy').setup({
 -- vim: ts=2 sts=2 sw=2 et
 
 -- Term mode escape bind to Ctrl+Esc
-vim.keymap.set('t', '<C-Esc>', '<C-\\><C-n>', { noremap = true })
+vim.keymap.set('t', '<Esc>', '<C-\\><C-n>', { noremap = true })
 
 -- Custom plugins
 require 'custom.plugins.kanagawa'
