@@ -974,6 +974,12 @@ require('lazy').setup({
 -- Term mode escape bind to Ctrl+Esc
 vim.keymap.set('t', '<Esc>', '<C-\\><C-n>', { noremap = true })
 
+-- Set soft tabs
+vim.opt.expandtab = true -- Use spaces instead of tabs
+vim.opt.tabstop = 4 -- Width of tab character
+vim.opt.softtabstop = 4 -- Fine tunes the amount of whitespace to be inserted
+vim.opt.shiftwidth = 4 -- Number of spaces to use for auto indent
+
 -- Custom plugins
 require 'custom.plugins.kanagawa'
 
